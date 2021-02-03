@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins',sans-serif;
+    background: linear-gradient(#845ec2,#a6f0c6);
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.container h1 input{
+    background: none;
+    outline: none;
+    border: 2px solid #000;
+    height: 30px;
+    position: relative;
+    left: 120px;
+    top: -52px;
+}
+img{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    left: 300px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+.btn{
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #845ec2;
+    border-radius: 25px;
+    letter-spacing: .4px;
+    cursor: pointer;
+}
+.btn:hover{
+    transition: all ease-in-out .5s;
+    background: #a6f0c6;
+    border: 2px solid #845ec2;
+}
+.buttons{
+    position: relative;
+    top: 420px;
+    left: -180px;
+    width: 100%;
+}
+
+@media screen and (max-width : 480px){
+    .container{
+        margin-top: 30px;
+        box-sizing: border-box;
+    }
+    img{
+        height: 400px;
+        width: 400px;
+        padding: 30px;
+        position: absolute;
+        left: 0px;
+        box-shadow: none;
+        border-radius: 3px;
+        top: 80px;
+    }
+    .container h1 input{
+        left: 12px;
+        top: -0px;
+    }
+    .btn{
+        outline: none;
+        font-size: 14px;
+        padding: 7px;
+        width: 100px;
+        height: 35px;
+        background: transparent;
+        border: 1px solid #845ec2;
+        border-radius: 25px;
+        letter-spacing: .2px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        transition: all ease-in-out .5s;
+        background: #a6f0c6;
+        border: 2px solid #845ec2;
+    }
+    .buttons{
+        position: fixed;
+        top: 460px;
+        left: 40px;
+    } 
+}

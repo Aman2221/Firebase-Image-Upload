@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>FIRE-IMAGE</title><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Name : <input type="text" id='name'/></h1>
+        <img src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="img" class="pic">
+        <div class="buttons">
+            <button class="btn" id="select"><i class="fas fa-check-circle"></i>Select</button>
+            <button class="btn" id="upload"><i class="fas fa-upload"></i>Upload</button>
+            <button class="btn" id="retrive"><i class="fas fa-download"></i>Retrive</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+        let firebaseConfig = {
+            apiKey: "AIzaSyCE_rcMC7uikb-kOF5t_WkNCKRdbrzOiAc",
+            authDomain: "learning-f80ea.firebaseapp.com",
+            databaseURL: "https://learning-f80ea-default-rtdb.firebaseio.com",
+            projectId: "learning-f80ea",
+            storageBucket: "learning-f80ea.appspot.com",
+            messagingSenderId: "841502367083",
+            appId: "1:841502367083:web:97c39291ce0a20156c402e"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>
